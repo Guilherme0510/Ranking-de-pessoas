@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#img_first,
+#img_second,
+#img_third {
+    width: 150px;
+    height: 150px; 
+    background-size: cover; 
+    background-position: top;
+    z-index: 2;
+  }
+  

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/output.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Ranking TayfeCred</title>
+  </head>
+
+  <body
+    class="min-h-screen bg-gray-100 flex flex-col items-center justify-center relative"
+  >
+    <section id="ranking" class="flex-grow flex items-center justify-center">
+      <div class="flex items-end space-x-4">
+        <!-- Medalha de Bronze -->''
+        <div class="relative flex items-center justify-center">
+          <div
+            class="h-[300px] w-60 bg-green-600 flex items-center justify-center"
+          >
+            <h1 class="text-9xl text-white">3</h1>
+          </div>
+          <div class="absolute -top-52 flex flex-col items-center w-full">
+            <img
+              src="https://via.placeholder.com/150"
+              alt=""
+              class="w-24 h-24 rounded-full border-4 border-green-500 mb-2"
+              id="img_third"
+            />
+            <h1 class="text-3xl font-semibold" id="third_name"></h1>
+            <h4 class="text-xl" id="third_sale"></h4>
+          </div>
+        </div>
+
+        <!-- Medalha de Prata -->
+        <div class="relative flex items-center justify-center">
+          <div
+            class="h-[500px] w-60 bg-red-600 flex items-center justify-center"
+          >
+            <h1 class="text-9xl text-white">1</h1>
+          </div>
+          <div class="absolute -top-52 flex flex-col items-center w-full">
+            <img
+              src=""
+              alt=""
+              class="w-24 h-24 rounded-full border-4 border-red-500 mb-2"
+              id="img_first"
+            />
+            <h1 class="text-3xl font-semibold" id="first_name"></h1>
+            <h4 class="text-xl" id="first_sale"></h4>
+          </div>
+        </div>
+
+        <!-- Medalha de Ouro -->
+        <div class="relative flex items-center justify-center">
+          <div
+            class="h-[400px] w-60 bg-yellow-500 flex items-center justify-center"
+          >
+            <h1 class="text-9xl text-white">2</h1>
+          </div>
+          <div class="absolute -top-52 flex flex-col items-center w-full">
+            <img
+              src="https://via.placeholder.com/150"
+              alt=""
+              class="w-24 h-24 rounded-full cover border-4 border-yellow-500 mb-2"
+              id="img_second"
+            />
+            <h1 class="text-3xl font-semibold" id="second_name"></h1>
+            <h4 class="text-xl" id="second_sale"></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="absolute bottom-20 left-0 w-full flex justify-center mb-4">
+      <button
+        id="edit"
+        class="bg-blue-600 flex justify-center items-center w-24 h-[60px] text-white rounded-2xl"
+        onclick="Edit()"
+      >
+        Editar
+      </button>
+    </div>
+
+    <div
+      id="overlay"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+    >
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mt-4 mb-5">
+          Coloque as pessoas em seu rank
+        </h2>
+        <form action="" class="flex flex-col gap-6 max-w-md mx-auto">
+          <div class="flex flex-row gap-3 justify-center items-center">
+            <label for="first_input" class="font-semibold text-gray-700"
+              >1º</label
+            >
+            <input
+              type="text"
+              id="first_input"
+              class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Nome do Operador"
+            />
+            <input
+              type="text"
+              id="first_venda_value"
+              class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Total de Vendas"
+            />
+          </div>
+
+          <div class="flex flex-row gap-3">
+            <label for="second_input" class="font-semibold text-gray-700"
+              >2º</label
+            >
+            <input
+              type="text"
+              id="second_input"
+              class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Nome do Operador"
+            />
+            <input
+              type="text"
+              id="second_venda_value"
+              class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Total de Vendas"
+            />
+          </div>
+
+          <div class="flex flex-row gap-3">
+            <label for="third_input" class="font-semibold text-gray-700"
+              >3º</label
+            >
+            <input
+              type="text"
+              id="third_input"
+              class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Nome do Operador"
+            />
+            <input
+              type="text"
+              id="third_venda_value"
+              class="border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Total de Vendas"
+            />
+          </div>
+        </form>
+        <button
+          id="save"
+          class="bg-red-600 mt-5 flex mx-auto justify-center items-center w-24 h-[60px] text-white rounded-2xl"
+          onclick="Save()"
+        >
+          Salvar
+        </button>
+
+        <div id="aqui"></div>
+      </div>
+    </div>
+    <script src="Js/script.js"></script>
+  </body>
+</html>
