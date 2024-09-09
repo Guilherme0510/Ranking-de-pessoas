@@ -20,15 +20,16 @@
           >
             <h1 class="text-9xl text-white">3</h1>
           </div>
-          <div class="absolute -top-52 flex flex-col items-center w-full">
+          <div class="absolute -top-56 flex flex-col items-center w-full">
             <img
-              src="https://via.placeholder.com/150"
+              src=""
               alt=""
-              class="w-24 h-24 rounded-full border-4 border-green-500 mb-2"
+              class="w-24 h-24 rounded-full object-cover object-top top-0 border-4 border-green-500 mb-2 shadow-lg"
               id="img_third"
             />
             <h1 class="text-3xl font-semibold" id="third_name"></h1>
-            <h4 class="text-xl" id="third_sale"></h4>
+            <h4 class="text-2xl" id="third_sale"></h4>
+            <img src="img/medalha-de-bronze.png" class="h-28 w-28 absolute top-[523px]" alt="">
           </div>
         </div>
 
@@ -39,15 +40,17 @@
           >
             <h1 class="text-9xl text-white">1</h1>
           </div>
-          <div class="absolute -top-52 flex flex-col items-center w-full">
+          <div class="absolute -top-56 flex flex-col items-center w-full">
             <img
               src=""
               alt=""
-              class="w-24 h-24 rounded-full border-4 border-red-500 mb-2"
+              class="w-24 h-24 rounded-full object-cover object-top top-0 border-4 border-red-500 mb-2 shadow-lg"
               id="img_first"
             />
             <h1 class="text-3xl font-semibold" id="first_name"></h1>
-            <h4 class="text-xl" id="first_sale"></h4>
+            <h4 class="text-2xl" id="first_sale"></h4>
+            <img src="img/medalha-de-ouro.png" class="h-28 w-28 absolute top-[723px]" alt="">
+
           </div>
         </div>
 
@@ -58,23 +61,25 @@
           >
             <h1 class="text-9xl text-white">2</h1>
           </div>
-          <div class="absolute -top-52 flex flex-col items-center w-full">
+          <div class="absolute -top-56 flex flex-col items-center w-full">
             <img
-              src="https://via.placeholder.com/150"
+              src=""
               alt=""
-              class="w-24 h-24 rounded-full cover border-4 border-yellow-500 mb-2"
+              class="w-24 h-24 rounded-full object-cover object-top top-0 border-4 border-yellow-500 mb-2 shadow-lg"
               id="img_second"
             />
             <h1 class="text-3xl font-semibold" id="second_name"></h1>
-            <h4 class="text-xl" id="second_sale"></h4>
+            <h4 class="text-2xl" id="second_sale"></h4>
+            <img src="img/medalha-de-prata.png" class="h-28 w-28 absolute top-[623px]" alt="">
+
           </div>
         </div>
       </div>
     </section>
-    <div class="absolute bottom-20 left-0 w-full flex justify-center mb-4">
+    <div class="absolute bottom-2 flex justify-center w-full mb-4">
       <button
         id="edit"
-        class="bg-blue-600 flex justify-center items-center w-24 h-[60px] text-white rounded-2xl"
+        class="bg-blue-600 w-24 h-[60px] text-white rounded-2xl hover:bg-blue-800 hover:scale-110 hover:w-28 transition-all duration-280 ease-in-out"
         onclick="Edit()"
       >
         Editar
@@ -144,15 +149,15 @@
             />
           </div>
         </form>
-        <button
-          id="save"
-          class="bg-red-600 mt-5 flex mx-auto justify-center items-center w-24 h-[60px] text-white rounded-2xl"
-          onclick="Save()"
-        >
-          Salvar
-        </button>
-
-        <div id="aqui"></div>
+        <div class="fixed bottom-10 left-0 right-0 flex justify-center mb-4">
+          <button
+            id="save"
+            class="bg-red-600 mt-5 w-24 h-[60px] text-white rounded-2xl hover:bg-red-700 hover:scale-110 hover:w-28 transition-all duration-280 ease-in-out"
+            onclick="Save()"
+          >
+            Salvar
+          </button>
+        </div>
       </div>
     </div>
     <script src="Js/script.js"></script>
